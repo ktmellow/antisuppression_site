@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Antisuppression Reading Bars</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="background">
+    <h1>Red-Green Antisuppression Bars for Google Chrome</h1>
+    <div class="wrapper">
+      <div class="img">I'm the image placeholder!</div>
+      <a href="https://chrome.google.com/webstore/detail/antisuppression-reading-b/kebomdjipbhpnlhamgnckhlobfgnabhk">
+        <button id="ext" class="button">
+          <i class="fa fa-chrome" aria-hidden="true"></i>
+          GET CHROME EXTENSION
+        </button>
+      </a>
+    </div>
+  </div>
+  
+  <div class="background">
+    <div class="wrapper">
+      <h1>Want to contribute?</h1>
+      <div class="row">
+        <div class="one_column">
+          <button class="button button-left">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> Contact
+          </button>
+          <a href="https://github.com/ktmellow/antisuppressionBars">
+            <button class="button button-right">
+              <i class="fa fa-github" aria-hidden="true"></i> 
+              Open Source
+            </button>      
+          </a> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background">
+    <div class="wrapper">   
+      <div class="row">
+        <h1>
+          Created By
+        </h1>
+      </div>
+      <div class="row">
+        <div class="one_third name">
+          <img class="face" src="statics/images/kristen.jpg" alt="">
+          <p>
+            Kristen Oda
+          </p>
+        </div>
+        <div class="one_third name">
+          <img class="face" src="statics/images/Low.jpg" alt="">
+          <p>Katherine Low</p>
+        </div>
+        <div class="one_third name">
+          <img class="face" src="statics/images/carol.jpg" alt="">
+          <p>Carol Yu</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    window.onload = function() {
+
+      var backgrounds = document.querySelectorAll(".background");
+      Array.prototype.forEach.call(backgrounds, function(ele, ind){
+        ele.style.height = '100%';
+        if( ind % 2 === 0 ) ele.style.backgroundColor = '#F0FFFF';
+      });
+
+    };
+
+  </script>
+</body>
+</html>
