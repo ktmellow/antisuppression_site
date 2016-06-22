@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Lato Light';
+  src: url('../fonts/lato.light.ttf'); 
+}
+
+@font-face {
+  font-family: 'Lato Medium';
+  src: url('../fonts/lato.medium.ttf'); 
+}
+
+@font-face {
+  font-family: 'Lato Semibold';
+  src: url('../fonts/lato.semibold.ttf'); 
+}
+
+html, body {
+  font-family: 'Lato Light';
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  color: #708090;
+}
+
+.background {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Lato Semibold';
+  font-size: 2.0em;
+  color: #708090;
+}
+
+h2 {
+  margin-top: -1%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img { 
+  min-width: 640px;
+  max-width: 50%; 
+}
+
+.name {
+  min-width: 100px;
+  font-family: 'Lato Medium';
+}
+
+img, embed, object, video {
+  max-width: 100%;
+  height : auto;
+}
+
+.face {
+  margin: 30% 0 5% 0;
+  border-radius: 50%;
+  border: 1px solid #708090;
+  width: 70%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color:  #708090;
+    outline: none;
+    transition: all .15s;
+    height: 45px;
+    min-width: 145px;
+    padding: 1.2vw 3vw 1vw;
+    margin: 1.3vw;
+    border: 1px solid;
+    border-color: #ED5565 #FFCE54 #48CFAD #4FC1E9;
+}
+
+.button-left {
+    margin-right: 20px;
+    width: 175px;
+}
+
+.button-right {
+    margin-left: 20px;
+    width: 175px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.red {
+  color: #ED5565;
+}
+
+.green {
+  color: #48CFAD;
+}
+
+/* -------- COLUMN LAYOUTS -------*/
+/* -- Column Sizes -- */
+ 
+.one_fourth   { width:21.25%; }
+.one_third    { width:29.333%; }
+.one_half     { width:45.5%; }
+.two_third    { width:61.666%; }
+.three_fourth { width:69.75%; }
+.one_column   { width:94%; }
+.full_column  { width:100%; }
+ 
+/* -- Column Margin & Float-- */
+.one_half,.one_third,.two_third,
+.three_fourth,.one_fourth,.one_column,
+.full_column {
+  float:left;
+  margin-left: 3%;
+}
+ 
+/* -- Column Row (aka Clearfix) -- */
+.row:before,
+.row:after {
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 650px) {
+  .img {
+    min-width: 90%;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 530px) {
+  .title {
+    font-size: 1.75em;
+  }
+
+  .img {
+    margin: 5% 0 5% 0;
+  }
+}
+
+@media (max-width: 450px) {
+  /* Treat as full column */
+  .one_half,
+  .one_third,
+  .two_third,
+  .one_fourth,
+  .three_fourth,
+  .full_column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .name > p {
+    margin-top: -.1%;
+  }
+
+  .name {
+    margin: 0;
+  }
+
+  .face {
+    width: 30%;
+    margin: 0;
+  }
+
+  .button {
+    display: block;
+    margin: 2% auto;
+  }
+ }
+
+ @media (max-width: 435px) {
+  .title {
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.25em;
+  }
+ }
+
+ @media (max-width: 350px) {
+  .title {
+    font-size: 1.25em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+ }
