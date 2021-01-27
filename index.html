@@ -4,29 +4,18 @@
   <meta charset="UTF-8">
   <title>Antisuppression Reading Bars</title>
   <link rel='shortcut icon' href='statics/images/favicon.ico' type='image/x-icon'/ >
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta creator="viewport" content="width=device-width, initial-scale=1">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="statics/styles/style.css">
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="js/jquery.scrollify.js"></script>
-  <script>
-    $(function() {
-        $.scrollify({
-            section : ".scroll",
-        });
-    });
-  </script>
 </head>
 <body>
 
-  <div class="background scroll">
-    <h1 class="title"><span class="red">Red</span>-<span class="green">Green</span> Antisuppression Bars</h1> 
-    <h2>for Google Chrome</h2>
-    <div class="wrapper">
-      <img class="img" src="https://i.gyazo.com/bff223d8cd874bacb6049ea01e3fc7d3.gif" alt="">
-      <br>
+  <div class="background">
+    <div class="content content--intro">
+      <h1 class="title"><span class="red">Red</span>-<span class="green">Green</span> Antisuppression Bars</h1> 
+      <div class="subtitle">for Google Chrome</div>
+      <img class="preview" src="https://i.gyazo.com/bff223d8cd874bacb6049ea01e3fc7d3.gif" alt="">
       <a href="https://chrome.google.com/webstore/detail/antisuppression-reading-b/kebomdjipbhpnlhamgnckhlobfgnabhk">
         <button id="ext" class="button">
           <i class="fa fa-chrome" aria-hidden="true"></i>
@@ -36,51 +25,47 @@
     </div>
   </div>
   
-  <div class="background scroll">
-    <div class="wrapper">
-      <h1>Want to contribute?</h1>
-      <div class="row">
-        <div class="one_column">
-          <a href="mailto:ktmellow@gmail.com">
-            <button class="button button-left">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i> Contact
-            </button>
-          </a>
-          <a href="https://github.com/ktmellow/antisuppressionBars">
-            <button class="button button-right">
-              <i class="fa fa-github" aria-hidden="true"></i> 
-              Open Source
-            </button>      
-          </a> 
-        </div>
+  <div class="background">
+    <div class="content content--contribute">
+      <h2>Want to contribute?</h2>
+      <div class="contribute">
+        <a class="contribute__link" href="mailto:ktmellow@gmail.com">
+          <button class="button button-left">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> Contact
+          </button>
+        </a>
+        <a class="contribute__link" href="https://github.com/ktmellow/antisuppressionBars">
+          <button class="button button-right">
+            <i class="fa fa-github" aria-hidden="true"></i> 
+            Open Source
+          </button>      
+        </a> 
       </div>
     </div>
   </div>
 
-  <div class="background scroll">
-    <div class="wrapper">   
-      <div class="row">
-        <h1>
-          Created by:
-        </h1>
-      </div>
-      <div class="row">
-        <div class="one_third name">
+  <div class="background">
+    <div class="content content--creation">   
+      <h2 class="created-by">
+        Created by:
+      </h2>
+      <div class="creators">
+        <div class="creator">
           <img class="face" src="statics/images/kristen.jpg" alt="">
           <p>
-            Kristen Oda
+            Kristen Oda, OD
           </p>
         </div>
-        <div class="one_third name">
+        <div class="creator">
           <img class="face" src="statics/images/Low.jpg" alt="">
           <p>Katherine Low</p>
         </div>
-        <div class="one_third name">
+        <div class="creator">
           <img class="face" src="statics/images/carol.jpg" alt="">
-          <p>Carol Yu</p>
+          <p>Carol Yu, OD</p>
         </div>
       </div>
-    </div>
+    </div>>
   </div>
 
   <script>
@@ -88,7 +73,6 @@
 
       var backgrounds = document.querySelectorAll(".background");
       Array.prototype.forEach.call(backgrounds, function(ele, ind){
-        ele.style.height = '100%';
         if( ind % 2 === 0 ) ele.style.backgroundColor = '#F0FFFF';
       });
 
