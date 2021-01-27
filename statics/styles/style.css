@@ -32,7 +32,8 @@ h1 {
   font-family: 'Lato Semibold';
   font-size: 2rem;
   color: #708090;
-  padding: 60px 0 0;
+  padding: 20px 0 0;
+  margin-bottom: 12px;
 }
 
 h2 {
@@ -78,6 +79,10 @@ a {
   padding: 20px;
 }
 
+.background:nth-child(odd) {
+  background-color: #F0FFFF;
+}
+
 .content {
   min-height: 100vh;
   max-height: 900px;
@@ -94,7 +99,7 @@ a {
 /*  */
 /* BEGIN INTRO STYLES - PAGE 1*/
 .content--intro {
-  padding-bottom: 120px;
+  padding-bottom: 112px;
 }
 
 .subtitle {
@@ -105,7 +110,7 @@ a {
 .preview {
   height: auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   margin: 50px auto 40px;
   display: block;
 }
